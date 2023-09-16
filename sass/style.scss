@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato';
+
+}
+body{
+    background-color: #fefae0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   height: 100vh;
+
+   .app{
+    background-color: #dda15e;
+    width: 50%;
+    margin: 2em 0;
+    border-radius:20px;
+    // text-align: center;
+
+   h1{
+    text-transform: uppercase;
+    color: #283618;
+    font-size: 3em;
+    padding: 1em;
+     text-align: center;
+    
+   }
+   form{
+    display: flex;
+    width: 100%;
+    
+    input{
+        border:none;
+        background-color: #fefae0;
+        font-size: 1.2em;
+        padding: 10px;
+        width: 90%;
+        border-left: 1px solid #283618;
+
+    }
+    button{
+        border:none;
+        color:white;
+        background-color:#283618 ;
+        width: 10%;
+        font-size: 2.6em;
+        font-weight: 700;
+    }
+    
+   }
+   ul{
+        
+        list-style: none;
+        li{
+           background-color: #262e4c;
+           list-style-type: none; 
+           border-bottom:1px solid white;
+           padding: 0.6em;
+           input{
+            border:none;
+            background-color: transparent;
+            color:white;
+            font-size: 1.3em;
+            font-weight: 500;
+            
+            outline: none;
+         
+           }
+           .check{
+        cursor:pointer;
+        width: 0.8em;
+        height:0.8em;
+        border-radius: 50%;
+        background-color: white;
+        border: 1px solid rgb(255, 255, 255);
+  -webkit-appearance: none;
+
+    }
+    .check:checked{
+        background-color: #dda15e;
+    }
+    .task{
+          font-size: 18px;
+  padding: 0 10px;
+  width: fit-content;
+  background: transparent;
+  border: none;
+  color: #fff;
+    }
+    .completed{
+          color: rgba(192, 192, 192, 0.8);
+  text-decoration: line-through;
+    }
+    i{
+        float: right;
+        color:white;
+        font-size: 1.3em;
+        padding-right:0.6em ;
+    }
+        }
+    }
+    
+}
+}
+@media (max-width:1000px){
+    .container{
+        .app{
+            width: 60%;
+}
+}
+}
+@media (max-width:840px){
+    .container{
+        .app{
+            width: 80%;
+            h1{
+                font-size: 1.5em;
+            }
+}
+}
+}
+@media(max-width:420px){
+    .container{
+    .app{
+        width: 90%;
+        form{
+            input{
+                width: 80%;
+            }
+            button{
+                width: 20%;
+            }
+        }
+    }
+}
+}
+
